@@ -4,10 +4,10 @@ from matplotlib.colors import ListedColormap
 
 
 def pretty_print_cm(cm,
-                    labels,
                     hide_zeroes=False,
                     hide_diagonal=False,
                     hide_threshold=None):
+    labels = ['Purchased', 'Not_Purchased']
     columnwidth = max([len(x) for x in labels] + [5])
     empty_cell = " " * columnwidth
     print("    " + empty_cell, end=" ")
