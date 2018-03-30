@@ -12,15 +12,15 @@ from sklearn.metrics import confusion_matrix
 from sklearn.naive_bayes import GaussianNB
 
 nltk.download('stopwords')
-dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
+dataset = pd.read_csv('restaurant_reviews.tsv', delimiter='\t', quoting=3)
 corpus = []
 
 for i in range(0, dataset.shape[0]):
     review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i])
-    review = review.lower()
-    review = review.split()
+    lower_review = review.lower()
+    split_review = lower_review.split()
     ps = PorterStemmer()
-    review = [ps.stem(word) for word in review
+    review = [ps.stem(word) for word in split_review
               if word not in set(stopwords.words('english'))]
     review = ' '.join(review)
     corpus.append(review)
@@ -35,7 +35,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 
 classifier = GaussianNB()
 classifier.fit(X_train, y_train)
-
 y_pred = classifier.predict(X_test)
 
 cm = confusion_matrix(y_test, y_pred)
