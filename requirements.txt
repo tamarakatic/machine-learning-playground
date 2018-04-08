@@ -1,0 +1,10 @@
+matplotlib==2.2.0
+pandas==0.22.0
+scikit-learn==0.19.1
+keras==2.1.4
+sklearn==0.0
+nltk==3.2.5
+Theano==1.0.1
+tensorflow==1.7.0
+pillow==5.0.0
+xgboost==0.7
