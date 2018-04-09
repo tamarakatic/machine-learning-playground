@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 
 
-dataset = pd.read_csv('Position_Salaries.csv')
+dataset = pd.read_csv('position_salaries.csv')
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2].values
 

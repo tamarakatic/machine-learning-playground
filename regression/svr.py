@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
 
-dataset = pd.read_csv('Position_Salaries.csv')
+dataset = pd.read_csv('position_salaries.csv')
 
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, 2:].values

@@ -7,7 +7,7 @@ from keras.layers import Dense
 
 from sklearn.metrics import confusion_matrix
 
-dataset = pd.read_csv("Churn_Modelling.csv")
+dataset = pd.read_csv("bank.csv")
 X_train, X_test, y_train, y_test = preprocess(dataset)
 
 classifier = Sequential()

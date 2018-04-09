@@ -4,7 +4,7 @@ import pandas as pd
 import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
 
-data = pd.read_csv("Mall_Customers.csv")
+data = pd.read_csv("customers.csv")
 X = data.iloc[:, [3, 4]].values
 
 dendrogram = sch.dendrogram(sch.linkage(X, method='ward'))

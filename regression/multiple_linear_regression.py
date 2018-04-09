@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 
 import statsmodels.formula.api as sm
 
-dataset = pd.read_csv("50_Startups.csv")
+dataset = pd.read_csv("startups.csv")
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 4].values
 

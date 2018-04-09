@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.cross_validation import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-dataset = pd.read_csv("Data.csv")
+dataset = pd.read_csv("data.csv")
 print("-----------------------Dataset-------------------")
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values

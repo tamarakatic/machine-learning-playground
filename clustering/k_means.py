@@ -3,7 +3,7 @@ import pandas as pd
 
 from sklearn.cluster import KMeans
 
-data = pd.read_csv("Mall_Customers.csv")
+data = pd.read_csv("customers.csv")
 X = data.iloc[:, [3, 4]].values
 
 wcss = []

@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
-dataset = pn.read_csv('Social_Network_Ads.csv')
+dataset = pn.read_csv('ads.csv')
 X = dataset.iloc[:, 2:4].values
 y = dataset.iloc[:, 4].values
 
