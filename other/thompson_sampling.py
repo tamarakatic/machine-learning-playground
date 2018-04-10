@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import random
 
 
-dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
+dataset = pd.read_csv('ads_optimisation.csv')
 
 N = 10000
 d = 10

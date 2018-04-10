@@ -1,7 +1,5 @@
 import numpy as np
-import pandas as pn
-import matplotlib as mpl
-mpl.use('TkAgg')
+import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
@@ -13,7 +11,7 @@ from sklearn.decomposition import KernelPCA
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 
-dataset = pn.read_csv('Social_Network_Ads.csv')
+dataset = pd.read_csv('ads.csv')
 X = dataset.iloc[:, 2:4].values
 y = dataset.iloc[:, 4].values
 

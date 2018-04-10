@@ -6,7 +6,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
-dataset = pd.read_csv('Wine.csv')
+dataset = pd.read_csv('wine.csv')
 X = dataset.iloc[:, 0:13].values
 y = dataset.iloc[:, 13].values
 

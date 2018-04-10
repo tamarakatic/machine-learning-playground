@@ -8,7 +8,7 @@ from sklearn.model_selection import cross_val_score
 
 import xgboost as xgb
 
-dataset = pd.read_csv('Churn_Modelling.csv')
+dataset = pd.read_csv('bank_customers.csv')
 X = dataset.iloc[:, 3:13].values
 y = dataset.iloc[:, 13].values
 

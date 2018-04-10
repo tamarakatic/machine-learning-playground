@@ -2,8 +2,7 @@ import pandas as pd
 
 from apyori import apriori
 
-
-dataset = pd.read_csv("Market_Basket_Optimisation.csv", header=None)
+dataset = pd.read_csv("products.csv", header=None)
 transaction = []
 
 for i in range(0, 7501):
